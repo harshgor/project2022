@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!--Link Swiper's CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!-- Local CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font awesome for icons -->
+    <script src="https://kit.fontawesome.com/694172b00a.js" crossorigin="anonymous"></script>
+
+
+    <title>Home Page</title>
+</head>
+
+<body>
+    <section id="about-us">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">KNBH</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">Why this project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Visualizations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#plans-and-pricing">Maps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">Contact us</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="ms-auto btn btn-light btn-lg login-signup">Login / Signup</button>
+                </div>
+            </nav>
+
+            <div class="row">
+                <div class="col-lg-6 title-content">
+                    <h1 class="title-heading">We are here to predict FLOOD!!!</h1>
+                    <p class="title-paragraph">We measure certain factors like humidity, temperature, rainfall and predict the chances of flood.</p>
+                    <p>We are here with an aim to prevent damages to human life, to properties, and to the environment.</p>
+                    <br>
+                    <p>We integrate Internet of Things, Artificial Intelligence and Machine learning processes for flood prediction.</p>
+                </div>
+                <div class="col-lg-6 title-image-container">
+
+                    <div class="title-image"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="features">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide feature-content">
+                    <div class="feature-image-container">
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1609330/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe> 
+                <!--       <div class="feature-image feature1-image"></div> -->
+                    </div>
+                    <h2 class="feature-heading">Temperature</h2>
+                    <p class="feature-paragraph">
+                        The above graph shows the temperature in degree celsius on a particular day.
+                    </p>
+                </div>
+                <div class="swiper-slide feature-content">
+                    <div class="feature-image-container">
+
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1609330/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>  
+                      <!--  <div class="feature-image feature2-image"></div> -->
+                    </div>
+                    <h2 class="feature-heading">Water level</h2>
+                    <p class="feature-paragraph">This graph basically shows the depth of water in a river body. 
+                        We can measure how deep the water is.
+                    </p>
+                </div>
+                <div class="swiper-slide feature-content">
+                    <div class="feature-image-container">
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1609330/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                       <!-- <div class="feature-image feature3-image"></div> -->
+                    </div>
+                    <h2 class="feature-heading">Humidity</h2>
+                    <p class="feature-paragraph">This graph shows us how humid the atmosphere/our surrounding is at any moment of time.</p>
+                </div>
+                <div class="swiper-slide feature-content">
+                    <div class="feature-image-container">
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1609330/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                     <!--   <div class="feature-image feature4-image"></div> -->
+                    </div>
+                    <h2 class="feature-heading">Rainfall</h2>
+                    <p class="feature-paragraph">This graph shows the amount of rainfall in millimeteres.</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="wave-features">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <section id="plans-and-pricing" class="pricing-table">
+        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1609330/maps/channel_show"></iframe>
+
+    </section>
+    <section id="contact-us">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 left-footer">
+                    <a class="footer-title" href="#about-us">KNBH</a>
+                    <p>One stopper for all your weather forecasts/alerts</p>
+                </div>
+                <div class="col-lg-3 col-md-6 middle-footer">
+                    <ul>
+                        <li>
+                            <a href="#about-us">Why this project</a>
+                        </li>
+                        <li>
+                            <a href="#features">Visualizations</a>
+                        </li>
+                        <li>
+                            <a href="#plans-and-pricing">Maps</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 third-footer">
+                    <h5>Let's Chat</h5>
+                    <a href="mailto:harsh.gor08@gmail.com">@gmail.com</a>
+                    <br>
+                    <a href=""><i class="fab fa-facebook-square fa-2x footer-icons"></i></a>
+                    <a href=""><i class="fab fa-twitter fa-2x footer-icons"></i></a>
+                    <a href=""><i class="fab fa-linkedin fa-2x footer-icons"></i></a>
+                    <a href=""><i class="fab fa-instagram fa-2x footer-icons"></i></a>
+                </div>
+                <div class="col-lg-3 col-md-6 right-footer">
+                    <h5>Get in touch</h5>
+                    <a href="tel:+919724609626">+91 9724609626</a><br>
+                    <a href="tel:+918511107656">+91 9724609626</a><br>
+                    <a href="tel:+916353896241">+91 9724609626</a><br>
+                    <a href="tel:+916355658540">+91 9724609626</a>
+                </div>
+            </div>
+            <div class="wave-footer">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script> KNBH   All Rights Reserved
+        </p>
+        <div class="wave-copyright">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script> 
+        var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination"
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        }
+      });
+    </script>
+</body>
+
+</html>
